@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_snc_egnyte_prote.EgnyteUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Utility functions</description>
+        <mobile_callable>false</mobile_callable>
+        <name>EgnyteUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var EgnyteUtils = Class.create();
+EgnyteUtils.prototype = {
+	initialize: function() {
+		var configGr = new GlideRecord('x_snc_egnyte_prote_egnyte_configuration');
+		configGr.query();
+		configGr.next();
+		this.egnyteConfig = configGr;
+	},
+
+	/**
+	 * Update OAuth entity redirect URL
+	 *
+	 * @param {String} name - OAuth entity name
+	 */
+	updateOAuthProfileRedirects: function(name) {
+		var oauthEntityGr = new GlideRecord('oauth_entity');
+		oauthEntityGr.addQuery('name', name);
+		oauthEntityGr.query();
+		if (oauthEntityGr.next()) {
+			oauthEntityGr.setValue('redirect_url', gs.getProperty('glide.servlet.uri') + 'oauth_redirect.do');
+			oauthEntityGr.update();
+		}
+	},
+
+	/**
+	 * Get configuration record
+	 *
+	 * @return {GlideRecord} configuration Gr
+	 */
+	getConfigGr: function() {
+		return this.egnyteConfig;
+	},
+
+	/**
+	 * Get sys_id for OAuth entity profile
+	 *
+	 * @param {String} name - OAuth entity profile name
+	 * @return {String} sys ID of the profile if found
+	 */
+	getOAuthProfileFromName: function(name) {
+		var entityGr = new GlideRecord('oauth_entity_profile');
+		entityGr.query('name', name);
+		entityGr.query();
+		if (entityGr.next()) {
+			return entityGr.getValue('sys_id');
+		}
+		return '';
+	},
+
+	/**
+	 * Get REST message sys_id
+	 *
+	 * @return {String} sys ID
+	 */
+	getRESTMsgSysID: function() {
+		var sysRESTMsgGr = new GlideRecord('sys_rest_message');
+		var name = this.getRESTMsgToUse();
+		sysRESTMsgGr.addQuery('name', name);
+		sysRESTMsgGr.query();
+		sysRESTMsgGr.next();
+		return sysRESTMsgGr.getValue('sys_id');
+	},
+
+	/**
+	 * Get REST message to use. There are two different REST message
+	 * configurations for US and EU endpoints.
+	 *
+	 * @return {String} Name of REST Message
+	 */
+	getRESTMsgToUse: function() {
+		return this.egnyteConfig
+		.getValue('endpoint') === 'Egnyte Protect US Endpoint'
+		? 'Egnyte Protect US'
+		: 'Egnyte Protect EU';
+	},
+
+	/**
+	 * Get OAuth profile sys_id to use in REST Message
+	 *
+	 * @return {String} sys ID
+	 */
+	getOAuthProfile: function() {
+		return this.egnyteConfig.getValue('oauth2_profile');
+	},
+
+	/**
+	 * Get latest modifiedAfter value to use while getting issue updates
+	 *
+	 * @return {Number} timestamp
+	 */
+	getModifiedAfter: function() {
+		return parseInt(this.egnyteConfig.getValue('modified_after')) || 0;
+	},
+
+	/**
+	 * Save latest modifiedAfter value for future references
+	 *
+	 * @param {Number} modifiedAfter - timestamp to store
+	 */
+	saveModifiedAfter: function(modifiedAfter) {
+		EgnyteLogger.info('Updating modifiedAfter');
+		EgnyteLogger.debug('Updating modifiedAfter with value ' + modifiedAfter);
+		this.egnyteConfig.setValue('modified_after', modifiedAfter.toString());
+		this.egnyteConfig.update();
+	},
+
+	/**
+	 * Set token expired to true to indicate user to re-authenticate
+	 */
+	setTokenExpired: function() {
+		EgnyteLogger.debug('Setting expired_token value as true in configuration');
+		this.egnyteConfig.setValue('token_expired', true);
+		this.egnyteConfig.update();
+	},
+
+	/**
+	 * Get incident table name from the configuration
+	 *
+	 * @return {String} incident table name
+	 */
+	getIncidentTableToUse: function() {
+		return this.egnyteConfig.getValue('issues_table');
+	},
+
+	/**
+	 * Get mapped impact value based on Egnyte issue severity
+	 *
+	 * @return {Number} impact
+	 */
+	getMappedImpact: function(issueSeverity) {
+		if (issueSeverity > 0 && issueSeverity <= 3) {
+			return 3; // low/non-critical
+		} else if (issueSeverity > 3 && issueSeverity <= 6) {
+			return 2; // medium/high
+		} else if (issueSeverity > 6 && issueSeverity <= 10) {
+			return 1; // high/critical
+		} else {
+			return 3; // low/non-critical
+		}
+	},
+
+	/**
+	 * Get mapped urgency value based on Egnyte issue severity
+	 *
+	 * @return {Number} impact
+	 */
+	getMappedUrgency: function(issueSeverity) {
+		if (issueSeverity > 0 && issueSeverity <= 3) {
+			return 3; // low
+		} else if (issueSeverity > 3 && issueSeverity <= 6) {
+			return 2; // medium
+		} else if (issueSeverity > 6 && issueSeverity <= 10) {
+			return 1; // high
+		} else {
+			return 3; // low/non-critical
+		}
+	},
+
+	/**
+	 * Check whether the issue exist in mapping table.
+	 *
+	 * @return {String|Boolean} incident sys_id if exists, false otherwise
+	 */
+	doesIssueExists: function(issueId) {
+		var issuesMappingGr = new GlideRecord('x_snc_egnyte_prote_egnyte_issues_mapping');
+		issuesMappingGr.addEncodedQuery('ORDERBYDESCsys_created_on');
+		issuesMappingGr.addQuery('issue_id', issueId);
+		issuesMappingGr.query();
+		if (issuesMappingGr.next()) {
+			return issuesMappingGr.getValue('incident_id');
+		}
+		return false;
+	},
+
+	/**
+	 * Create incident in given incident table with provided field values.
+	 * 
+	 * @param {Object} fieldValuesObj - map of field-value
+	 * @param {String} incidentTableName - table name
+	 * @param {String} status - issue status on Egnyte Protect
+	 * @param {String} timestamp - issue updated time
+	 * @return {String} sys_id of the record created
+	 */
+	createIncident: function(fieldValuesObj, incidentTableName, status, timestamp) {
+		var incidentGr = new GlideRecord(incidentTableName);
+		for (var field in fieldValuesObj) {
+			incidentGr.setValue(field, fieldValuesObj[field]);
+		}
+		if (status != 'OPEN') {
+			incidentGr.work_notes = 'Issue has been updated to ' + status + ' on Egnyte Protect at ' + timestamp;
+		}
+		return incidentGr.insert();
+	},
+
+	/**
+	 * Add resolution note if the issue is resolved on Egnyte Protect.
+	 * 
+	 * @param {String} incidentSysID - sys_id of incident
+	 * @param {String} incidentTableName - table name
+	 * @param {String} status - updated status of the issue
+	 * @param {String} timestamp - issue updated time
+	 */
+	addWorkNote: function(incidentSysID, incidentTableName, status, timestamp) {
+		var incidentGr = new GlideRecord(incidentTableName);
+		incidentGr.addQuery('sys_id', incidentSysID);
+		incidentGr.query();
+		if(incidentGr.next()) {
+			incidentGr.work_notes = 'Issue has been updated to ' + status + ' on Egnyte Protect at ' + timestamp;
+			incidentGr.update();
+		} else {
+			EgnyteLogger.debug('Adding work note failed. Incident with sys_id ' + incidentSysID + ' not found in ' + incidentTableName + ' table.');
+		}
+	},
+
+	type: 'EgnyteUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-14 13:00:11</sys_created_on>
+        <sys_id>c06fc8b8c39112104098de1d0501314a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>EgnyteUtils</sys_name>
+        <sys_package display_value="Egnyte Protect " source="x_snc_egnyte_prote">bc56c87cc35112104098de1d0501310e</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Egnyte Protect ">bc56c87cc35112104098de1d0501310e</sys_scope>
+        <sys_update_name>sys_script_include_c06fc8b8c39112104098de1d0501314a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-14 13:00:11</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>c06fc8b8c39112104098de1d0501314a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-14 13:00:11</sys_created_on>
+        <sys_id>6f6f00f8c39112104098de1d05013157</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-14 13:00:11</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

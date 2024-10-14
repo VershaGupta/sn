@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="c2d7c4fcc35112104098de1d0501310c" extends="sysauto_script" label="Egnyte Configuration" max_length="40" name="x_snc_egnyte_prote_egnyte_configuration" type="collection">
+        <element choice="3" default="Egnyte Protect US Endpoint" label="Endpoint" max_length="40" name="endpoint" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Egnyte Protect US Endpoint" sequence="0" value="Egnyte Protect US Endpoint"/>
+                <element inactive_on_update="false" label="Egnyte Protect EU Endpoint" sequence="1" value="Egnyte Protect EU Endpoint"/>
+            </choice>
+        </element>
+        <element choice="3" default="Incident" label="Issues Table" max_length="40" name="issues_table" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Security Incident" sequence="1" value="Security Incident"/>
+                <element inactive_on_update="false" label="Incident" sequence="0" value="Incident"/>
+            </choice>
+        </element>
+    </element>
+</database>

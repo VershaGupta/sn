@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="54b900f0c39112104098de1d050131d7" label="Egnyte Issues Mapping" max_length="40" name="x_snc_egnyte_prote_egnyte_issues_mapping" type="collection">
+        <element label="Issue ID" max_length="255" name="issue_id" type="integer"/>
+        <element label="Status" max_length="20" name="status" type="string"/>
+        <element label="JSON Data" max_length="2000" name="json_data" type="string"/>
+        <element label="Severity" max_length="255" name="severity" type="integer"/>
+        <element label="Item Display Name" max_length="255" name="item_display_name" type="string"/>
+        <element label="Detected" max_length="255" name="detected" type="glide_date_time"/>
+        <element label="Source" max_length="50" name="source" type="string"/>
+        <element label="Incident ID" max_length="40" name="incident_id" type="string"/>
+        <element label="Source Label" max_length="255" name="source_label" type="string"/>
+    </element>
+</database>

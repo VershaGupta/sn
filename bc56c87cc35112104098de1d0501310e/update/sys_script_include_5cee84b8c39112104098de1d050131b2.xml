@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_snc_egnyte_prote.EgnyteFetchIssues</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Use the script to fetch the issue updates from Egnyte Protect</description>
+        <mobile_callable>false</mobile_callable>
+        <name>EgnyteFetchIssues</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var EgnyteFetchIssues = Class.create();
+EgnyteFetchIssues.prototype = {
+    initialize: function() {
+		this.utils = new EgnyteUtils();
+		this.egnyteConfig = this.utils.getConfigGr();
+		this.modifiedAfter = this.utils.getModifiedAfter();
+    },
+
+	/**
+	 * Function used to start the process of fetching the issues from Egnyte Protect
+	 */
+	process: function() {
+
+		EgnyteLogger.info('Starting script to fetch Egnyte issues');
+		EgnyteLogger.debug('Using modifiedAfter as ' + this.modifiedAfter);
+
+		// Continue fetching the issues till latest updates
+		while(true) {
+			var status = this.handleRESTRequest();
+			if (!status) {
+				break;
+			}
+		}
+	},
+
+	/**
+	 * Handle REST request to fetch the issue updates
+	 *
+	 * @return {Boolean} true if successful
+	 */
+	handleRESTRequest: function() {
+		var r = new sn_ws.RESTMessageV2(
+			'x_snc_egnyte_prote.' + this.utils.getRESTMsgToUse(),
+			'Get Issues');
+		r.setAuthenticationProfile('oauth2', this.utils.getOAuthProfile());
+		r.setQueryParameter('modifiedAfter', this.modifiedAfter);
+
+		try {
+			response = r.execute();
+			responseBody = response.getBody();
+			httpStatus = response.getStatusCode();
+			return this.handleRESTResponse(httpStatus, responseBody);
+		} catch(exception) {
+			var message = exception.getMessage();
+			EgnyteLogger.info('Exception occurred while fetching issues');
+			EgnyteLogger.debug('Exception: ' + message);
+
+			if (message.indexOf('User Not Authenticated') > -1) {
+				this.utils.setTokenExpired();
+			}
+			return false;
+		}
+	},
+
+	/**
+	 * Handle REST request response
+	 *
+	 * @param {Number} status - HTTP response status
+	 * @param {String} responseBody - HTTP response body
+	 * @return {Boolean} true if successful
+	 */
+	handleRESTResponse: function(status, responseBody) {
+		EgnyteLogger.debug('Response status: ' + status + '\n' + 'Response Body: ' + responseBody);
+		if (status === 200) {
+			var parsedResponse = JSON.parse(responseBody);
+			if (parsedResponse.modifiedAfter) {
+				// save the latest modifiedAfter
+				this.utils.saveModifiedAfter(parsedResponse.modifiedAfter);
+				this.modifiedAfter = parsedResponse.modifiedAfter;
+				
+				// save the issues in mapping table
+				var saveIssues = new EgnyteSaveIssues();
+				saveIssues.process(parsedResponse.issues);
+				return true;
+			} else {
+				EgnyteLogger.info('No more issues available.');
+				return false;
+			}
+		} else {
+			EgnyteLogger.error('Error while fetching issues.');
+			return false;
+		}
+	},
+
+    type: 'EgnyteFetchIssues'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-14 12:58:14</sys_created_on>
+        <sys_id>5cee84b8c39112104098de1d050131b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>EgnyteFetchIssues</sys_name>
+        <sys_package display_value="Egnyte Protect " source="x_snc_egnyte_prote">bc56c87cc35112104098de1d0501310e</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Egnyte Protect ">bc56c87cc35112104098de1d0501310e</sys_scope>
+        <sys_update_name>sys_script_include_5cee84b8c39112104098de1d050131b2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-14 12:58:14</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>5cee84b8c39112104098de1d050131b2</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-14 12:58:13</sys_created_on>
+        <sys_id>07fe08b8c39112104098de1d050131c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-14 12:58:13</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

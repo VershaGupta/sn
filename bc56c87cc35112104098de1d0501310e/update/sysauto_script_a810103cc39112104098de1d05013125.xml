@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time>1970-01-01 00:00:00</entered_time>
+        <max_drift/>
+        <name>EgnyteUpdateSystemConfig</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2024-10-14 13:02:59</run_start>
+        <run_time>1970-01-01 08:00:00</run_time>
+        <run_type>on_demand</run_type>
+        <script><![CDATA[var usEndpoint = 'https://usc1-api.egnyteprotect.com';
+var euEndpoint = 'https://euw1-api.egnyteprotect.com';
+var clientId = '5zspndak8q53knupnu4ugpy5';
+var clientSecret = 'jp7g975ffgRJXX9zWuyA7DH5xH7dfUbBPYwASxsgNeS7vh2A';
+var apiVersion = 'v1';
+
+var oauthEntityGr = new GlideRecord('oauth_entity');
+
+// Function to update OAuth Application Registery records
+function updateOAuthRegistery(name, endpoint) {
+	oauthEntityGr.initialize();
+	oauthEntityGr.addQuery('sys_scope', gs.getCurrentApplicationId());
+	oauthEntityGr.addQuery('name', name);
+	oauthEntityGr.query();
+	if (oauthEntityGr.next()) {
+		if (clientId && clientSecret) {
+			oauthEntityGr.setValue('client_id', clientId);
+			oauthEntityGr.setValue('client_secret', clientSecret);
+		}
+		oauthEntityGr.setValue('auth_url', endpoint + '/oauth2/code');
+		oauthEntityGr.setValue('token_url', endpoint + '/oauth2/token');
+		oauthEntityGr.setValue('revoke_token_url', endpoint + '/oauth2/token');
+		oauthEntityGr.setValue('redirect_url', gs.getProperty('glide.servlet.uri') + 'oauth_redirect.do');
+		oauthEntityGr.update();
+	}
+}
+
+var sysRESTMsgGr = new GlideRecord('sys_rest_message');
+var sysRESTMsgFnGr = new GlideRecord('sys_rest_message_fn');
+
+// Function to update REST messages used
+function updateRESTMessage(name, endpoint) {
+	sysRESTMsgGr.initialize();
+	sysRESTMsgGr.addQuery('name', name);
+	sysRESTMsgGr.addQuery('sys_scope', gs.getCurrentApplicationId());
+	sysRESTMsgGr.query();
+
+	if (sysRESTMsgGr.next()) {
+		sysRESTMsgGr.setValue('rest_endpoint', endpoint + '/api/' + apiVersion);
+		var rmSysID = sysRESTMsgGr.update();
+
+		sysRESTMsgFnGr.initialize();
+		sysRESTMsgFnGr.addQuery('rest_message', rmSysID);
+		sysRESTMsgFnGr.query();
+		if (sysRESTMsgFnGr.next()) {
+			sysRESTMsgFnGr.setValue('rest_endpoint', endpoint + '/api/' + apiVersion + '/issueupdates');
+			sysRESTMsgFnGr.update();
+		}
+	}
+}
+
+updateOAuthRegistery('Egnyte Protect US', usEndpoint);
+updateOAuthRegistery('Egnyte Protect EU', euEndpoint);
+updateRESTMessage('Egnyte Protect US', usEndpoint);
+updateRESTMessage('Egnyte Protect EU', euEndpoint);]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-14 13:03:16</sys_created_on>
+        <sys_id>a810103cc39112104098de1d05013125</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>EgnyteUpdateSystemConfig</sys_name>
+        <sys_package display_value="Egnyte Protect " source="x_snc_egnyte_prote">bc56c87cc35112104098de1d0501310e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Egnyte Protect ">bc56c87cc35112104098de1d0501310e</sys_scope>
+        <sys_update_name>sysauto_script_a810103cc39112104098de1d05013125</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-14 13:03:16</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>a810103cc39112104098de1d05013125</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-14 13:03:16</sys_created_on>
+        <sys_id>b020dcb8c39112104098de1d050131ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-14 13:03:16</sys_updated_on>
+        <table>sysauto_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

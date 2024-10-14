@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-14 12:27:58</sys_created_on>
+        <sys_id>e7080430c39112104098de1d0501313e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_egnyte_prote_egnyte_configuration.x_snc_egnyte_prote.egnyte_configuration_user</sys_name>
+        <sys_package display_value="Egnyte Protect " source="x_snc_egnyte_prote">bc56c87cc35112104098de1d0501310e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Egnyte Protect ">bc56c87cc35112104098de1d0501310e</sys_scope>
+        <sys_security_acl display_value="x_snc_egnyte_prote_egnyte_configuration">af080430c39112104098de1d0501313a</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_e7080430c39112104098de1d0501313e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-14 12:27:58</sys_updated_on>
+        <sys_user_role display_value="x_snc_egnyte_prote.egnyte_configuration_user" name="x_snc_egnyte_prote.egnyte_configuration_user">eb084cfcc35112104098de1d050131d5</sys_user_role>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Egnyte Protect ">bc56c87cc35112104098de1d0501310e</application>
+        <file_path/>
+        <instance_id>f516ca2a1b498658168f4089bd4bcb4c</instance_id>
+        <instance_name>dev249202</instance_name>
+        <name>sys_security_acl_role_e7080430c39112104098de1d0501313e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-10-14 12:27:58</sys_created_on><sys_id>e7080430c39112104098de1d0501313e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_snc_egnyte_prote_egnyte_configuration.x_snc_egnyte_prote.egnyte_configuration_user</sys_name><sys_package display_value="Egnyte Protect " source="x_snc_egnyte_prote">bc56c87cc35112104098de1d0501310e</sys_package><sys_policy/><sys_scope display_value="Egnyte Protect ">bc56c87cc35112104098de1d0501310e</sys_scope><sys_security_acl display_value="x_snc_egnyte_prote_egnyte_configuration">af080430c39112104098de1d0501313a</sys_security_acl><sys_update_name>sys_security_acl_role_e7080430c39112104098de1d0501313e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-10-14 12:27:58</sys_updated_on><sys_user_role display_value="x_snc_egnyte_prote.egnyte_configuration_user" name="x_snc_egnyte_prote.egnyte_configuration_user">eb084cfcc35112104098de1d050131d5</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-1929284877</payload_hash>
+        <record_name>x_snc_egnyte_prote_egnyte_configuration.x_snc_egnyte_prote.egnyte_configuration_user</record_name>
+        <reverted_from/>
+        <source>f856c87cc35112104098de1d05013113</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-14 12:27:58</sys_created_on>
+        <sys_id>7b080430c39112104098de1d05013141</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1928affe1f40000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-14 12:27:58</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>7f0804307c911210a4f4d74e24d87f40</update_guid>
+        <update_guid_history>7f0804307c911210a4f4d74e24d87f40:-1929284877</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_snc_egnyte_prote_egnyte_configuration.x_snc_egnyte_prote.egnyte_configuration_">f32b8074c39112104098de1d050131a4</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-14 12:41:38</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>38ca4b85fdaa4fefb322e0cd2a076479</sys_id>
+        <sys_metadata>e7080430c39112104098de1d0501313e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_egnyte_prote_egnyte_configuration.x_snc_egnyte_prote.egnyte_configuration_user</sys_name>
+        <sys_package display_value="Egnyte Protect " source="x_snc_egnyte_prote">bc56c87cc35112104098de1d0501310e</sys_package>
+        <sys_parent display_value="x_snc_egnyte_prote_egnyte_configuration">af080430c39112104098de1d0501313a</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Egnyte Protect ">bc56c87cc35112104098de1d0501310e</sys_scope>
+        <sys_scope_delete display_value="">03b7569074f94eac9f9980ba6b365ec9</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_e7080430c39112104098de1d0501313e</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_e7080430c39112104098de1d0501313e">7b080430c39112104098de1d05013141</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-14 12:41:38</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
