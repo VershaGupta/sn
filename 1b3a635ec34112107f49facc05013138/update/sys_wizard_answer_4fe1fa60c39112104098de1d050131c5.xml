@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer">
+    <sys_wizard_answer action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <answer>Egnyte Configuration</answer>
+        <button_label/>
+        <dependent_value/>
+        <element/>
+        <name>Egnyte Configuration</name>
+        <next_question/>
+        <order>100</order>
+        <payload_name/>
+        <question display_value="Application File" name="Application File">a44da339c3f412104098de1d050131e6</question>
+        <roles/>
+        <script/>
+        <sys_class_name>sys_wizard_answer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-14 06:11:39</sys_created_on>
+        <sys_id>4fe1fa60c39112104098de1d050131c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Egnyte Configuration</sys_name>
+        <sys_package display_value="Access Analyzer" source="sn_access_analyzer">21d5e77677171110638cfe21fe5a993c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Egnyte Protect">1b3a635ec34112107f49facc05013138</sys_scope>
+        <sys_update_name>sys_wizard_answer_4fe1fa60c39112104098de1d050131c5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-14 06:11:39</sys_updated_on>
+        <table/>
+        <target_url>x_snc_egnyte_prote_egnyte_configuration.do</target_url>
+        <type>1</type>
+    </sys_wizard_answer>
+</record_update>

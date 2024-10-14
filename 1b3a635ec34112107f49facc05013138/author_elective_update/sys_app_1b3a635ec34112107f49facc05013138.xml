@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_app">
+    <sys_app action="DELETE">
+        <active>true</active>
+        <can_edit_in_studio>false</can_edit_in_studio>
+        <enforce_license>none</enforce_license>
+        <guided_setup_guid/>
+        <hide_on_ui>false</hide_on_ui>
+        <ide_created/>
+        <installed_as_dependency>false</installed_as_dependency>
+        <js_level>helsinki_es5</js_level>
+        <licensable>true</licensable>
+        <license/>
+        <license_category>none</license_category>
+        <license_definition/>
+        <license_model>none</license_model>
+        <logo/>
+        <menu/>
+        <name>Egnyte Protect</name>
+        <package_json/>
+        <private>false</private>
+        <restrict_table_access>false</restrict_table_access>
+        <runtime_access_tracking>permissive</runtime_access_tracking>
+        <scope>x_snc_egnyte_prote</scope>
+        <scoped_administration>false</scoped_administration>
+        <short_description/>
+        <source>x_snc_egnyte_prote</source>
+        <store_correlation_id/>
+        <store_url/>
+        <subscription_entitlement/>
+        <sys_class_name>sys_app</sys_class_name>
+        <sys_code/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-08 18:02:15</sys_created_on>
+        <sys_id>1b3a635ec34112107f49facc05013138</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-10 17:14:44</sys_updated_on>
+        <template/>
+        <trackable>true</trackable>
+        <uninstall_blocked>false</uninstall_blocked>
+        <user_role/>
+        <vendor/>
+        <vendor_prefix/>
+        <version>1.0.0</version>
+    </sys_app>
+    <sys_translated_text action="DELETE" query="documentkey=1b3a635ec34112107f49facc05013138"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Egnyte Protect">1b3a635ec34112107f49facc05013138</application>
+        <file_path/>
+        <instance_id>f516ca2a1b498658168f4089bd4bcb4c</instance_id>
+        <instance_name>dev249202</instance_name>
+        <name>sys_app_1b3a635ec34112107f49facc05013138</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_app"><sys_app action="INSERT_OR_UPDATE"><active>true</active><can_edit_in_studio>false</can_edit_in_studio><enforce_license>none</enforce_license><guided_setup_guid/><hide_on_ui>false</hide_on_ui><ide_created/><installed_as_dependency>false</installed_as_dependency><js_level>helsinki_es5</js_level><licensable>true</licensable><license/><license_category>none</license_category><license_definition/><license_model>none</license_model><logo/><menu/><name>Egnyte Protect</name><package_json/><private>false</private><restrict_table_access>false</restrict_table_access><runtime_access_tracking>permissive</runtime_access_tracking><scope>x_snc_egnyte_prote</scope><scoped_administration>false</scoped_administration><short_description/><source>x_snc_egnyte_prote</source><store_correlation_id/><store_url/><subscription_entitlement/><sys_class_name>sys_app</sys_class_name><sys_code/><sys_created_by>admin</sys_created_by><sys_created_on>2024-10-08 18:02:15</sys_created_on><sys_id>1b3a635ec34112107f49facc05013138</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-10-10 17:14:44</sys_updated_on><template/><trackable>true</trackable><uninstall_blocked>false</uninstall_blocked><user_role/><vendor/><vendor_prefix/><version>1.0.0</version></sys_app><sys_translated_text action="delete_multiple" query="documentkey=1b3a635ec34112107f49facc05013138"/></record_update>]]></payload>
+        <payload_hash>1025805934</payload_hash>
+        <record_name>Egnyte Protect</record_name>
+        <reverted_from/>
+        <source>9242c6dbc3895a104098de1d05013195</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-10 05:31:09</sys_created_on>
+        <sys_id>fe420adbc3895a104098de1d05013179</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19274e8d7250000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-10 05:31:09</sys_updated_on>
+        <type>Custom Application</type>
+        <update_guid>ea4de44f39cd9210c5e07850681918e7</update_guid>
+        <update_guid_history>fcdc280fe7cd9210e292fe0d0fb55d60:2116181090,fcdc280fe7cd9210e292fe0d0fb55d60:2116181090,3b32c6ba4a8192102af665ea622d9e55:2116181090,3b32c6ba4a8192102af665ea622d9e55:2116181090,994fd97e89cd52105f6f94a24115f250:1352049370,994fd97e89cd52105f6f94a24115f250:1352049370,2762dd7a138d5210cf63fb906ccaf647:-491564058,673c953a9acd521029393c13c478bb26:1352049370,2762dd7a138d5210cf63fb906ccaf647:-491564058,8d4f0976468d52102587414e7b44015a:1819734870,4f8a09fea84d5210fb5225ebfa1c2ab6:-670827025,933ae3123c811210772f971d77210756:-1474269218</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-11 07:03:27</sys_created_on>
+        <sys_db_object display_value="" name="sys_app">sys_app</sys_db_object>
+        <sys_id>0797b76ef74c460aa5fd5a390e14d7b9</sys_id>
+        <sys_metadata>1b3a635ec34112107f49facc05013138</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Egnyte Protect</sys_name>
+        <sys_package display_value="Egnyte Protect" source="x_snc_egnyte_prote">1b3a635ec34112107f49facc05013138</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Egnyte Protect">1b3a635ec34112107f49facc05013138</sys_scope>
+        <sys_scope_delete display_value="Egnyte Protect">0797b76ef74c460aa5fd5a390e14d7b9</sys_scope_delete>
+        <sys_update_name>sys_app_1b3a635ec34112107f49facc05013138</sys_update_name>
+        <sys_update_version display_value="sys_app_1b3a635ec34112107f49facc05013138">fe420adbc3895a104098de1d05013179</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-11 07:03:27</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

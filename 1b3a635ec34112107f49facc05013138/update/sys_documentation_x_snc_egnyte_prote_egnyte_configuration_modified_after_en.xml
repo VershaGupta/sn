@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="modified_after" label="Modified After" language="en" table="x_snc_egnyte_prote_egnyte_configuration">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>modified_after</element>
+            <help/>
+            <hint/>
+            <label>Modified After</label>
+            <language>en</language>
+            <name>x_snc_egnyte_prote_egnyte_configuration</name>
+            <plural>Modified Afters</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-10-08 18:15:01</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Modified After</sys_name>
+            <sys_package display_value="Egnyte Protect" source="x_snc_egnyte_prote">1b3a635ec34112107f49facc05013138</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Egnyte Protect">1b3a635ec34112107f49facc05013138</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_egnyte_prote_egnyte_configuration_modified_after_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-10-08 18:15:01</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

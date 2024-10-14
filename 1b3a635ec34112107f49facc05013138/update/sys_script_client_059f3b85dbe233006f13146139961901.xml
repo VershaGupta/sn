@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Validate the tokens presence for Egnyte Protect configuration and warn or inform user about the token availability.</description>
+        <field>active</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Egnyte Validate OAuth Token</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+	if (g_form.isNewRecord()) {
+		return;
+	}
+	var isUserNotAuthenticated = g_scratchpad.isUserNotAuthenticated;
+	if (isUserNotAuthenticated == 'true') {
+		g_form.addWarningMessage(getTokenExpiredMessage('Refresh'));
+		return;
+	}
+
+	var oauthProfileId = g_scratchpad.oauth2_profile;
+	var oauthReqSysId = g_scratchpad.restMsgSysID;
+
+	// Clear the previously added messages
+	g_form.clearMessages();
+
+	var gaAccessToken = new GlideAjax('global.OAuthAccessToken');
+	gaAccessToken.addParam('sysparm_name', 'isAccessTokenAvailable');
+	gaAccessToken.addParam('requestor', oauthReqSysId);
+	gaAccessToken.addParam('oauth_provider_profile_id', oauthProfileId);
+	// Invoke the GlideAjax with a callback function
+	gaAccessToken.getXML(parseAjaxResponse);
+	return;
+}
+
+function parseAjaxResponse(response) {
+	var result = response.responseXML.getElementsByTagName('result');
+	var isRefreshToken = (result[0].getAttribute('isRefreshToken') == 'true');
+	var isAccessToken = (result[0].getAttribute('isToken') == 'true');
+	var thirtyDaysInSecs = 30 * 86400;
+	
+	if (isRefreshToken) {
+		// if refreshTokenExpiresInSecs <30 days
+		var expiresInSecs = result[0].getAttribute('refreshTokenExpiresInSecs');
+		var expiresAt = result[0].getAttribute('refreshTokenExpiresOnDate');
+		if (expiresInSecs <= 0) {
+			g_form.addWarningMessage(getTokenExpiredMessage('Refresh', expiresAt));
+		} else if (expiresInSecs < thirtyDaysInSecs) {
+			// show warning about token about to expire on such date
+			g_form.addWarningMessage(getTokenAboutToExpireMessage('Refresh', expiresAt));
+		} else {
+			// show info about having refresh token and will expire on such date
+			g_form.addInfoMessage(getTokenAvailableMessage('Refresh', expiresAt));
+		}
+	} else if (isAccessToken) {
+		// if tokenExpiresInSecs <30 days
+		var tokenExpiresInSecs = result[0].getAttribute('tokenExpiresInSecs');
+		var tokenExpiresAt = result[0].getAttribute('tokenExpiresOnDate');
+		if (tokenExpiresInSecs <= 0) {
+			g_form.addWarningMessage(getTokenExpiredMessage('Access', tokenExpiresAt));
+		} else if (tokenExpiresInSecs < thirtyDaysInSecs) {
+			// show warning about token about to expire on such date
+			g_form.addWarningMessage(getTokenAboutToExpireMessage('Access', tokenExpiresAt));
+		} else {
+			// show info about having refresh token and will expire on such date
+			g_form.addInfoMessage(getTokenAvailableMessage('Access', tokenExpiresAt));
+		}
+		
+	} else {
+		g_form.addWarningMessage(getNoTokensAvailableMessage());
+	}
+}
+
+function getTokenExpiredMessage(tokenType) {
+	var msg = 'OAuth ' + tokenType + ' token is expired. ' + getLinkLocationStringMessage();
+	return getMessage(msg);
+}
+
+function getTokenAboutToExpireMessage(tokenType, tokenExpiresOnDate) {
+	var msg = 'OAuth ' + tokenType + ' token is available but will expire soon at ' + tokenExpiresOnDate + '. ' + getLinkLocationStringMessage();
+	return getMessage(msg);
+}
+
+function getTokenAvailableMessage(tokenType, tokenExpiresOnDate) {
+	var msg = 'OAuth ' + tokenType + ' token is available and will expire at ' + tokenExpiresOnDate + '.';
+	return getMessage(msg);
+}
+
+function getNoTokensAvailableMessage() {
+	var msg = 'OAuth Access or Refresh tokens are not available. ' + getLinkLocationStringMessage();
+	return getMessage(msg);
+}
+
+function getLinkLocationStringMessage() {
+	return 'Click the \'Authenticate\' button to request a new token.';
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-08 18:35:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>059f3b85dbe233006f13146139961901</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Egnyte Validate OAuth Token</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Egnyte Protect" source="x_snc_egnyte_prote">1b3a635ec34112107f49facc05013138</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Egnyte Protect">1b3a635ec34112107f49facc05013138</sys_scope>
+        <sys_update_name>sys_script_client_059f3b85dbe233006f13146139961901</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-24 17:38:10</sys_updated_on>
+        <table>x_snc_egnyte_prote_egnyte_configuration</table>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

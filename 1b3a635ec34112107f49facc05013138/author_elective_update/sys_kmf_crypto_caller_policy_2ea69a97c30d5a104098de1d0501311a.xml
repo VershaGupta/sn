@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_kmf_crypto_caller_policy">
+    <sys_kmf_crypto_caller_policy action="DELETE">
+        <active>true</active>
+        <approval_type/>
+        <check_script_hash>false</check_script_hash>
+        <crypto_module display_value="instance_level_glide_encrypter">401fa53c5b6220106cdba88ddc81c754</crypto_module>
+        <crypto_spec display_value="instance_level_glide_encrypter --- Symmetric Key Wrapping/Unwrapping">9e1f293c5b6220106cdba88ddc81c797</crypto_spec>
+        <granular_operation/>
+        <identity_group_alias/>
+        <impersonation>false</impersonation>
+        <instance_recipient/>
+        <owner>f516ca2a1b498658168f4089bd4bcb4c</owner>
+        <policy_name>AutoGen-scope-x_snc_egnyte_prote-instance_level_glide_encrypter</policy_name>
+        <result>track</result>
+        <script_hash/>
+        <script_table/>
+        <signature_data/>
+        <specify_purpose>false</specify_purpose>
+        <sys_class_name>sys_kmf_crypto_caller_policy</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-10 07:00:08</sys_created_on>
+        <sys_id>2ea69a97c30d5a104098de1d0501311a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Egnyte Protect" source="x_snc_egnyte_prote">1b3a635ec34112107f49facc05013138</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Egnyte Protect">1b3a635ec34112107f49facc05013138</sys_scope>
+        <sys_update_name>sys_kmf_crypto_caller_policy_2ea69a97c30d5a104098de1d0501311a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-10 07:00:08</sys_updated_on>
+        <target_role/>
+        <target_scope display_value="Egnyte Protect">1b3a635ec34112107f49facc05013138</target_scope>
+        <target_script/>
+        <type>3</type>
+        <used>false</used>
+    </sys_kmf_crypto_caller_policy>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Egnyte Protect">1b3a635ec34112107f49facc05013138</application>
+        <file_path/>
+        <instance_id>f516ca2a1b498658168f4089bd4bcb4c</instance_id>
+        <instance_name>dev249202</instance_name>
+        <name>sys_kmf_crypto_caller_policy_2ea69a97c30d5a104098de1d0501311a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_kmf_crypto_caller_policy"><sys_kmf_crypto_caller_policy action="INSERT_OR_UPDATE"><active>true</active><approval_type/><check_script_hash>false</check_script_hash><crypto_module display_value="instance_level_glide_encrypter">401fa53c5b6220106cdba88ddc81c754</crypto_module><crypto_spec display_value="instance_level_glide_encrypter --- Symmetric Key Wrapping/Unwrapping">9e1f293c5b6220106cdba88ddc81c797</crypto_spec><granular_operation/><identity_group_alias/><impersonation>false</impersonation><instance_recipient/><owner>f516ca2a1b498658168f4089bd4bcb4c</owner><policy_name>AutoGen-scope-x_snc_egnyte_prote-instance_level_glide_encrypter</policy_name><result>track</result><script_hash/><script_table/><signature_data/><specify_purpose>false</specify_purpose><sys_class_name>sys_kmf_crypto_caller_policy</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-10-10 07:00:08</sys_created_on><sys_id>2ea69a97c30d5a104098de1d0501311a</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Egnyte Protect" source="x_snc_egnyte_prote">1b3a635ec34112107f49facc05013138</sys_package><sys_policy/><sys_scope display_value="Egnyte Protect">1b3a635ec34112107f49facc05013138</sys_scope><sys_update_name>sys_kmf_crypto_caller_policy_2ea69a97c30d5a104098de1d0501311a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-10-10 07:00:08</sys_updated_on><target_role/><target_scope display_value="Egnyte Protect">1b3a635ec34112107f49facc05013138</target_scope><target_script/><type>3</type><used>false</used></sys_kmf_crypto_caller_policy></record_update>]]></payload>
+        <payload_hash>1878670877</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>fd03861fc3895a104098de1d0501311f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-10 07:00:09</sys_created_on>
+        <sys_id>6aa69a97c30d5a104098de1d0501311f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>192753a51d30000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-10 07:00:09</sys_updated_on>
+        <type>Module Access Policy</type>
+        <update_guid>eaa69a97e80d5a10fb5076059346471e</update_guid>
+        <update_guid_history>eaa69a97e80d5a10fb5076059346471e:1878670877</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-11 07:03:43</sys_created_on>
+        <sys_db_object display_value="" name="sys_kmf_crypto_caller_policy">sys_kmf_crypto_caller_policy</sys_db_object>
+        <sys_id>2c2b13caeb16416a882405e74be19cf1</sys_id>
+        <sys_metadata>2ea69a97c30d5a104098de1d0501311a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Egnyte Protect" source="x_snc_egnyte_prote">1b3a635ec34112107f49facc05013138</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Egnyte Protect">1b3a635ec34112107f49facc05013138</sys_scope>
+        <sys_scope_delete display_value="Egnyte Protect">0797b76ef74c460aa5fd5a390e14d7b9</sys_scope_delete>
+        <sys_update_name>sys_kmf_crypto_caller_policy_2ea69a97c30d5a104098de1d0501311a</sys_update_name>
+        <sys_update_version display_value="sys_kmf_crypto_caller_policy_2ea69a97c30d5a104098de1d0501311a">6aa69a97c30d5a104098de1d0501311f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-11 07:03:43</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_egnyte_prote_egnyte_configuration">
+    <x_snc_egnyte_prote_egnyte_configuration action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <config_name>test5</config_name>
+        <endpoint>Egnyte Protect US Endpoint</endpoint>
+        <entered_time/>
+        <issues_table>sn_si_incident</issues_table>
+        <max_drift/>
+        <modified_after>0</modified_after>
+        <name>test5</name>
+        <oauth2_profile>a04ef345dbe233006f131461399619be</oauth2_profile>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2024-10-14 06:16:52</run_start>
+        <run_time>1970-01-01 08:00:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[var fetchIssues = new x_snc_egnyte_prote.EgnyteFetchIssues(); fetchIssues.process();]]></script>
+        <sys_class_name>x_snc_egnyte_prote_egnyte_configuration</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-14 06:16:58</sys_created_on>
+        <sys_id>b3133ee0c39112104098de1d050131e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>test5</sys_name>
+        <sys_package display_value="Egnyte Protect" source="x_snc_egnyte_prote">1b3a635ec34112107f49facc05013138</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Egnyte Protect">1b3a635ec34112107f49facc05013138</sys_scope>
+        <sys_update_name>x_snc_egnyte_prote_egnyte_configuration_b3133ee0c39112104098de1d050131e7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-14 06:16:58</sys_updated_on>
+        <time_zone/>
+        <token_expired>false</token_expired>
+        <upgrade_safe>false</upgrade_safe>
+    </x_snc_egnyte_prote_egnyte_configuration>
+</record_update>

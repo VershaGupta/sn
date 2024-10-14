@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="72bcc06ec30512107f49facc05013160" extends="sysauto_script" label="Egnyte Configuration" max_length="40" name="x_snc_egnyte_prote_egnyte_configuration" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="3" default="incident" label="Issues Table" max_length="40" name="issues_table" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Security Incident" sequence="200" value="sn_si_incident"/>
+                <element inactive_on_update="false" label="Incident" sequence="100" value="incident"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="Egnyte Protect US Endpoint" label="Endpoint" max_length="40" name="endpoint" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Egnyte Protect EU Endpoint" sequence="200" value="Egnyte Protect EU Endpoint"/>
+                <element inactive_on_update="false" label="Egnyte Protect US Endpoint" sequence="100" value="Egnyte Protect US Endpoint"/>
+            </choice>
+        </element>
+        <element label="Name" mandatory="true" max_length="100" name="config_name" type="string"/>
+        <element label="OAuth2 Profile" max_length="32" name="oauth2_profile" type="string"/>
+        <element default="0" label="Modified After" max_length="20" name="modified_after" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Token Expired" max_length="40" name="token_expired" type="boolean"/>
+    </element>
+</database>

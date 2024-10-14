@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="INSERT_OR_UPDATE">
+        <authentication_type>inherit_from_parent</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user>admin</basic_auth_user>
+        <content/>
+        <function_name>Get Issues</function_name>
+        <http_method>get</http_method>
+        <lock>false</lock>
+        <oauth2_profile/>
+        <protocol_name/>
+        <qualified_name>Egnyte Protect EU [ Get Issues ]</qualified_name>
+        <rest_endpoint>https://euw1-api.egnyteprotect.com/api/v1/issueupdates</rest_endpoint>
+        <rest_message display_value="Egnyte Protect EU">a4831072db6233006f131461399619e9</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-13 11:54:15</sys_created_on>
+        <sys_id>b9d31cfedb2233006f131461399619d1</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Get Issues</sys_name>
+        <sys_package display_value="Egnyte Protect" source="x_snc_egnyte_prote">1b3a635ec34112107f49facc05013138</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Egnyte Protect">1b3a635ec34112107f49facc05013138</sys_scope>
+        <sys_update_name>sys_rest_message_fn_b9d31cfedb2233006f131461399619d1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-08 09:22:59</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+</record_update>

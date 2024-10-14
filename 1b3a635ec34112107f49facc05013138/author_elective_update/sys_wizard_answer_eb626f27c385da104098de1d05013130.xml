@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer">
+    <sys_wizard_answer action="DELETE">
+        <active>true</active>
+        <answer>Egnyte Configuration</answer>
+        <button_label/>
+        <dependent_value/>
+        <element/>
+        <name>Egnyte Configuration</name>
+        <next_question/>
+        <order>100</order>
+        <payload_name/>
+        <question display_value="Application File" name="Application File">a44da339c3f412104098de1d050131e6</question>
+        <roles/>
+        <script/>
+        <sys_class_name>sys_wizard_answer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-11 07:09:39</sys_created_on>
+        <sys_id>eb626f27c385da104098de1d05013130</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Egnyte Configuration</sys_name>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Egnyte Protect">1b3a635ec34112107f49facc05013138</sys_scope>
+        <sys_update_name>sys_wizard_answer_eb626f27c385da104098de1d05013130</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-11 07:09:39</sys_updated_on>
+        <table/>
+        <target_url>x_snc_egnyte_prote_egnyte_configuration.do</target_url>
+        <type>1</type>
+    </sys_wizard_answer>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Egnyte Protect">1b3a635ec34112107f49facc05013138</application>
+        <file_path/>
+        <instance_id>f516ca2a1b498658168f4089bd4bcb4c</instance_id>
+        <instance_name>dev249202</instance_name>
+        <name>sys_wizard_answer_eb626f27c385da104098de1d05013130</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer"><sys_wizard_answer action="INSERT_OR_UPDATE"><active>true</active><answer>Egnyte Configuration</answer><button_label/><dependent_value/><element/><name>Egnyte Configuration</name><next_question/><order>100</order><payload_name/><question display_value="Application File" name="Application File">a44da339c3f412104098de1d050131e6</question><roles/><script/><sys_class_name>sys_wizard_answer</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-10-11 07:09:39</sys_created_on><sys_id>eb626f27c385da104098de1d05013130</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Egnyte Configuration</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Egnyte Protect">1b3a635ec34112107f49facc05013138</sys_scope><sys_update_name>sys_wizard_answer_eb626f27c385da104098de1d05013130</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-10-11 07:09:39</sys_updated_on><table/><target_url>x_snc_egnyte_prote_egnyte_configuration.do</target_url><type>1</type></sys_wizard_answer></record_update>]]></payload>
+        <payload_hash>584289374</payload_hash>
+        <record_name>Egnyte Configuration</record_name>
+        <reverted_from/>
+        <source>468cf622c33012104098de1d05013104</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2024-09-25 15:34:26</sys_created_on>
+        <sys_id>680e5e64c31112104098de1d050131b1</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>19229d1c3d00000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>Answer</type>
+        <update_guid>280e5e6481111210ab5b38c695a996b1</update_guid>
+        <update_guid_history>280e5e6481111210ab5b38c695a996b1:584289374</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-14 04:44:38</sys_created_on>
+        <sys_db_object display_value="" name="sys_wizard_answer">sys_wizard_answer</sys_db_object>
+        <sys_id>00e0b44eb032456080061e264b4b8a40</sys_id>
+        <sys_metadata>eb626f27c385da104098de1d05013130</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Egnyte Configuration</sys_name>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_parent display_value="Application File">a44da339c3f412104098de1d050131e6</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Egnyte Protect">1b3a635ec34112107f49facc05013138</sys_scope>
+        <sys_scope_delete display_value="Egnyte Protect">0797b76ef74c460aa5fd5a390e14d7b9</sys_scope_delete>
+        <sys_update_name>sys_wizard_answer_eb626f27c385da104098de1d05013130</sys_update_name>
+        <sys_update_version display_value="sys_wizard_answer_eb626f27c385da104098de1d05013130">680e5e64c31112104098de1d050131b1</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-14 04:44:38</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

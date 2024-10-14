@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="Automated Action Interface" source="com.snc.automation">4ab48b71c33012104098de1d0501318e</dependency>
+        <min_version>0.0.1</min_version>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-12 04:41:19</sys_created_on>
+        <sys_id>1fe1fa60c39112104098de1d050131d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="Egnyte Protect" source="x_snc_egnyte_prote">1b3a635ec34112107f49facc05013138</sys_package>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-12 04:41:19</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>

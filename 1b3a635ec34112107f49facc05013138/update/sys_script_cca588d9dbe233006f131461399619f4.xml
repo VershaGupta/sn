@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_snc_egnyte_prote_egnyte_configuration</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Egnyte Update Configuration</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions>x_snc_egnyte_prote.egnyte_user</role_conditions>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	var utils = new EgnyteUtils();
+	var oauth2Profile = utils.getOAuthProfileFromName(current.endpoint.toString());
+	if (oauth2Profile == '') {
+		gs.addErrorMessage('OAuth Profile not found. Please contact support.');
+		return;
+	}
+	current.oauth2_profile = oauth2Profile;
+	
+	// there must be a single configuration, so deleting existing configuration while adding new one
+	if(current.operation() == 'insert') {
+		var gr = new GlideRecord('x_snc_egnyte_prote_egnyte_configuration');
+		gr.query();
+		gr.setValue('active', false);
+		gr.updateMultiple();
+		gr.deleteMultiple();
+		
+		// Update redirect URL for OAuth flow
+		utils.updateOAuthProfileRedirects('Egnyte Protect US');
+		utils.updateOAuthProfileRedirects('Egnyte Protect EU');	
+		
+		EgnyteLogger.info('New configuration added by '+ gs.getUserName() + '(' + gs.getUserID() + ')');
+	} else {
+		EgnyteLogger.info(gs.getUserName() + '(' + gs.getUserID() + ') updated configuration');
+	}
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-08 19:03:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cca588d9dbe233006f131461399619f4</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>Egnyte Update Configuration</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Egnyte Protect" source="x_snc_egnyte_prote">1b3a635ec34112107f49facc05013138</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Egnyte Protect">1b3a635ec34112107f49facc05013138</sys_scope>
+        <sys_update_name>sys_script_cca588d9dbe233006f131461399619f4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-01 17:34:44</sys_updated_on>
+        <template>nameSAMEASconfig_name^active=true^script=var fetchIssues = new x_snc_egnyte_prote.EgnyteFetchIssues(); fetchIssues.process();^sys_scope=1b3a635ec34112107f49facc05013138^EQ</template>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=cca588d9dbe233006f131461399619f4"/>
+</record_update>

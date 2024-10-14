@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="saml2_assertion_producer">
+    <saml2_assertion_producer action="DELETE">
+        <audience>udrxtfc</audience>
+        <expiry_interval>60</expiry_interval>
+        <issuer>www.yourinstance.service-now.com</issuer>
+        <name>7s45r7s</name>
+        <nameid_format>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</nameid_format>
+        <recipient>udrctf</recipient>
+        <signing_algorithm>http://www.w3.org/2001/04/xmldsig-more#rsa-sha256</signing_algorithm>
+        <subject_nameid>5dr7sr5t</subject_nameid>
+        <sys_class_name>saml2_assertion_producer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-11 06:15:05</sys_created_on>
+        <sys_id>1fe51ba3c345da104098de1d050131ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>7s45r7s</sys_name>
+        <sys_package display_value="Egnyte Protect" source="x_snc_egnyte_prote">1b3a635ec34112107f49facc05013138</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Egnyte Protect">1b3a635ec34112107f49facc05013138</sys_scope>
+        <sys_update_name>saml2_assertion_producer_1fe51ba3c345da104098de1d050131ed</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-11 06:15:05</sys_updated_on>
+    </saml2_assertion_producer>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Egnyte Protect">1b3a635ec34112107f49facc05013138</application>
+        <file_path/>
+        <instance_id>f516ca2a1b498658168f4089bd4bcb4c</instance_id>
+        <instance_name>dev249202</instance_name>
+        <name>saml2_assertion_producer_1fe51ba3c345da104098de1d050131ed</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="saml2_assertion_producer"><saml2_assertion_producer action="INSERT_OR_UPDATE"><audience>udrxtfc</audience><expiry_interval>60</expiry_interval><issuer>www.yourinstance.service-now.com</issuer><name>7s45r7s</name><nameid_format>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</nameid_format><recipient>udrctf</recipient><signing_algorithm>http://www.w3.org/2001/04/xmldsig-more#rsa-sha256</signing_algorithm><subject_nameid>5dr7sr5t</subject_nameid><sys_class_name>saml2_assertion_producer</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-10-11 06:15:05</sys_created_on><sys_id>1fe51ba3c345da104098de1d050131ed</sys_id><sys_mod_count>0</sys_mod_count><sys_name>7s45r7s</sys_name><sys_package display_value="Egnyte Protect" source="x_snc_egnyte_prote">1b3a635ec34112107f49facc05013138</sys_package><sys_policy/><sys_scope display_value="Egnyte Protect">1b3a635ec34112107f49facc05013138</sys_scope><sys_update_name>saml2_assertion_producer_1fe51ba3c345da104098de1d050131ed</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-10-11 06:15:05</sys_updated_on></saml2_assertion_producer></record_update>]]></payload>
+        <payload_hash>-1410516834</payload_hash>
+        <record_name>7s45r7s</record_name>
+        <reverted_from/>
+        <source>fd03861fc3895a104098de1d0501311f</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-11 06:15:05</sys_created_on>
+        <sys_id>54f597a3c345da104098de1d050131cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1927a376d090000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-11 06:15:05</sys_updated_on>
+        <type>SAML2 Assertion Producer</type>
+        <update_guid>58f597a37445da103b2ed05b0d8af5cb</update_guid>
+        <update_guid_history>58f597a37445da103b2ed05b0d8af5cb:-1410516834</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="7s45r7s">2411e7a3c385da104098de1d05013146</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-11 07:03:43</sys_created_on>
+        <sys_db_object display_value="" name="saml2_assertion_producer">saml2_assertion_producer</sys_db_object>
+        <sys_id>9bec650991464b6896ba8d3f1755e5a1</sys_id>
+        <sys_metadata>1fe51ba3c345da104098de1d050131ed</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>7s45r7s</sys_name>
+        <sys_package display_value="Egnyte Protect" source="x_snc_egnyte_prote">1b3a635ec34112107f49facc05013138</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Egnyte Protect">1b3a635ec34112107f49facc05013138</sys_scope>
+        <sys_scope_delete display_value="Egnyte Protect">0797b76ef74c460aa5fd5a390e14d7b9</sys_scope_delete>
+        <sys_update_name>saml2_assertion_producer_1fe51ba3c345da104098de1d050131ed</sys_update_name>
+        <sys_update_version display_value="saml2_assertion_producer_1fe51ba3c345da104098de1d050131ed">54f597a3c345da104098de1d050131cc</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-11 07:03:43</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

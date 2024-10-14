@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_snc_egnyte_prote_egnyte_issues_mapping</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Egnyte Create Incidents</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions>x_snc_egnyte_prote.egnyte_user</role_conditions>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	var utils = new EgnyteUtils();
+	var incidentID = utils.doesIssueExists(current.issue_id);
+	var severity = utils.getMappedImpact(current.severity);
+	var urgency = utils.getMappedUrgency(current.severity);
+	var incidentTable = utils.getIncidentTableToUse();
+	
+	try {
+		// If issue exist and the status is other than open, add work note
+		// else create the incident and store the reference
+		if (incidentID && current.status != 'OPEN') {
+			utils.addWorkNote(incidentID, incidentTable, current.status, current.updated);
+			current.setValue('incident_id', incidentID);
+		} else {
+			var incidentFieldValues = {
+				short_description: 'Egnyte Protect: ' + current.source_label + ' ' + current.item_display_name,
+				opened_at: current.detected,
+				description: JSON.stringify(JSON.parse(current.json_data), null, 2),
+			};
+
+			if (incidentTable == 'incident') {
+				incidentFieldValues.caller_id = gs.getUserID();
+				incidentFieldValues.impact = severity;
+				incidentFieldValues.urgency = urgency;
+			} else {
+				incidentFieldValues.business_criticality = severity;
+				incidentFieldValues.contact_type = current.source;
+			}
+
+			incidentID = utils.createIncident(incidentFieldValues, incidentTable, current.status, current.updated);
+			current.setValue('incident_id', incidentID);
+		}
+	} catch (e) {
+		EgnyteLogger.debug('Exception occurred while creating or updating incident for issue id "' + current.issue_id + '" on table "' + incidentTable + '".');
+	}
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-08 18:59:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>07c400d9dbe233006f13146139961950</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>Egnyte Create Incidents</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Egnyte Protect" source="x_snc_egnyte_prote">1b3a635ec34112107f49facc05013138</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Egnyte Protect">1b3a635ec34112107f49facc05013138</sys_scope>
+        <sys_update_name>sys_script_07c400d9dbe233006f13146139961950</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-15 17:00:26</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=07c400d9dbe233006f13146139961950"/>
+</record_update>

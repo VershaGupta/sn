@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="b219f792c3c112107f49facc0501316d" label="Egnyte App Logs" max_length="40" name="x_snc_egnyte_prote_egnyte_app_logs" type="collection">
+        <element label="Log Level" max_length="10" name="log_level" type="string"/>
+        <element label="Log Message" max_length="4000" name="log_message" type="string"/>
+    </element>
+</database>
