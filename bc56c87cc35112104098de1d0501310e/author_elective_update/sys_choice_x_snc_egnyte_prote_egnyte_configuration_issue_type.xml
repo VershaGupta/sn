@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="issue_type" table="x_snc_egnyte_prote_egnyte_configuration" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>issue_type</element>
+            <name>x_snc_egnyte_prote_egnyte_configuration</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-10-21 11:06:52</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>issue_type</sys_name>
+            <sys_package display_value="Egnyte Protect " source="x_snc_egnyte_prote">bc56c87cc35112104098de1d0501310e</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Egnyte Protect ">bc56c87cc35112104098de1d0501310e</sys_scope>
+            <sys_update_name>sys_choice_x_snc_egnyte_prote_egnyte_configuration_issue_type</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-10-21 11:06:52</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>issue_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>COMPROMISED_ACCOUNT</label>
+            <language>en</language>
+            <name>x_snc_egnyte_prote_egnyte_configuration</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-10-21 11:06:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-10-21 11:06:52</sys_updated_on>
+            <value>COMPROMISED_ACCOUNT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>issue_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>EMPTY_GROUP</label>
+            <language>en</language>
+            <name>x_snc_egnyte_prote_egnyte_configuration</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-10-21 11:06:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-10-21 11:06:52</sys_updated_on>
+            <value>EMPTY_GROUP</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>issue_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>EXTERNAL_SHARING</label>
+            <language>en</language>
+            <name>x_snc_egnyte_prote_egnyte_configuration</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-10-21 11:06:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-10-21 11:06:52</sys_updated_on>
+            <value>EXTERNAL_SHARING</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>issue_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>INDIVIDUAL_PERMISSION</label>
+            <language>en</language>
+            <name>x_snc_egnyte_prote_egnyte_configuration</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-10-21 11:06:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-10-21 11:06:52</sys_updated_on>
+            <value>INDIVIDUAL_PERMISSION</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>issue_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>MALFORMED_PERMISSIONS</label>
+            <language>en</language>
+            <name>x_snc_egnyte_prote_egnyte_configuration</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-10-21 11:06:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-10-21 11:06:52</sys_updated_on>
+            <value>MALFORMED_PERMISSIONS</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>issue_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>MALWARE_INFECTION</label>
+            <language>en</language>
+            <name>x_snc_egnyte_prote_egnyte_configuration</name>
+            <sequence>5</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-10-21 11:06:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-10-21 11:06:52</sys_updated_on>
+            <value>MALWARE_INFECTION</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>issue_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>OPEN_ACCESS</label>
+            <language>en</language>
+            <name>x_snc_egnyte_prote_egnyte_configuration</name>
+            <sequence>6</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-10-21 11:06:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-10-21 11:06:52</sys_updated_on>
+            <value>OPEN_ACCESS</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>issue_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>PUBLIC_LINK</label>
+            <language>en</language>
+            <name>x_snc_egnyte_prote_egnyte_configuration</name>
+            <sequence>7</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-10-21 11:06:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-10-21 11:06:52</sys_updated_on>
+            <value>PUBLIC_LINK</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>issue_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>UNUSED_GROUP</label>
+            <language>en</language>
+            <name>x_snc_egnyte_prote_egnyte_configuration</name>
+            <sequence>8</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-10-21 11:06:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-10-21 11:06:52</sys_updated_on>
+            <value>UNUSED_GROUP</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>issue_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>UNUSUAL_ACCESS</label>
+            <language>en</language>
+            <name>x_snc_egnyte_prote_egnyte_configuration</name>
+            <sequence>9</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-10-21 11:06:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-10-21 11:06:52</sys_updated_on>
+            <value>UNUSUAL_ACCESS</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

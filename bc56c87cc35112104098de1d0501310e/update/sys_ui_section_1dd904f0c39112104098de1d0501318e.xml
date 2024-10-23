@@ -4,13 +4,13 @@
             <element>source_label</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-14 12:40:20</sys_created_on>
-            <sys_id>bceac834c39112104098de1d0501312a</sys_id>
+            <sys_created_on>2024-10-21 11:11:33</sys_created_on>
+            <sys_id>a4b933fac3d1da104098de1d050131f2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_egnyte_prote_egnyte_issues_mapping" sys_domain="global" view="Default view">1dd904f0c39112104098de1d0501318e</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-14 12:40:20</sys_updated_on>
+            <sys_updated_on>2024-10-21 11:11:33</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>item_display_name</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-14 12:40:20</sys_created_on>
-            <sys_id>38eac834c39112104098de1d0501312b</sys_id>
+            <sys_created_on>2024-10-21 11:11:33</sys_created_on>
+            <sys_id>20b933fac3d1da104098de1d050131f3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_egnyte_prote_egnyte_issues_mapping" sys_domain="global" view="Default view">1dd904f0c39112104098de1d0501318e</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-14 12:40:20</sys_updated_on>
+            <sys_updated_on>2024-10-21 11:11:33</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>json_data</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-14 12:40:20</sys_created_on>
-            <sys_id>bceac834c39112104098de1d0501312b</sys_id>
+            <sys_created_on>2024-10-21 11:11:33</sys_created_on>
+            <sys_id>a4b933fac3d1da104098de1d050131f3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_egnyte_prote_egnyte_issues_mapping" sys_domain="global" view="Default view">1dd904f0c39112104098de1d0501318e</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-14 12:40:20</sys_updated_on>
+            <sys_updated_on>2024-10-21 11:11:33</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>detected</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-14 12:40:20</sys_created_on>
-            <sys_id>34eac834c39112104098de1d0501312c</sys_id>
+            <sys_created_on>2024-10-21 11:11:33</sys_created_on>
+            <sys_id>2cb933fac3d1da104098de1d050131f3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_egnyte_prote_egnyte_issues_mapping" sys_domain="global" view="Default view">1dd904f0c39112104098de1d0501318e</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-14 12:40:20</sys_updated_on>
+            <sys_updated_on>2024-10-21 11:11:33</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -60,13 +60,13 @@
             <element>sys_updated_on</element>
             <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-14 12:40:20</sys_created_on>
-            <sys_id>b8eac834c39112104098de1d0501312c</sys_id>
+            <sys_created_on>2024-10-21 11:11:33</sys_created_on>
+            <sys_id>a0b933fac3d1da104098de1d050131f4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_egnyte_prote_egnyte_issues_mapping" sys_domain="global" view="Default view">1dd904f0c39112104098de1d0501318e</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-14 12:40:20</sys_updated_on>
+            <sys_updated_on>2024-10-21 11:11:33</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -74,13 +74,13 @@
             <element>severity</element>
             <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-14 12:40:20</sys_created_on>
-            <sys_id>30eac834c39112104098de1d0501312d</sys_id>
+            <sys_created_on>2024-10-21 11:11:33</sys_created_on>
+            <sys_id>28b933fac3d1da104098de1d050131f4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_egnyte_prote_egnyte_issues_mapping" sys_domain="global" view="Default view">1dd904f0c39112104098de1d0501318e</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-14 12:40:20</sys_updated_on>
+            <sys_updated_on>2024-10-21 11:11:33</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -88,13 +88,13 @@
             <element>incident_id</element>
             <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-14 12:40:20</sys_created_on>
-            <sys_id>b4eac834c39112104098de1d0501312d</sys_id>
+            <sys_created_on>2024-10-21 11:11:33</sys_created_on>
+            <sys_id>acb933fac3d1da104098de1d050131f4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_egnyte_prote_egnyte_issues_mapping" sys_domain="global" view="Default view">1dd904f0c39112104098de1d0501318e</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-14 12:40:20</sys_updated_on>
+            <sys_updated_on>2024-10-21 11:11:33</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -102,13 +102,13 @@
             <element>issue_id</element>
             <position>7</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-14 12:40:20</sys_created_on>
-            <sys_id>3ceac834c39112104098de1d0501312d</sys_id>
+            <sys_created_on>2024-10-21 11:11:33</sys_created_on>
+            <sys_id>24b933fac3d1da104098de1d050131f5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_egnyte_prote_egnyte_issues_mapping" sys_domain="global" view="Default view">1dd904f0c39112104098de1d0501318e</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-14 12:40:20</sys_updated_on>
+            <sys_updated_on>2024-10-21 11:11:33</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -116,13 +116,13 @@
             <element>status</element>
             <position>8</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-14 12:40:20</sys_created_on>
-            <sys_id>b0eac834c39112104098de1d0501312e</sys_id>
+            <sys_created_on>2024-10-21 11:11:33</sys_created_on>
+            <sys_id>a8b933fac3d1da104098de1d050131f5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_egnyte_prote_egnyte_issues_mapping" sys_domain="global" view="Default view">1dd904f0c39112104098de1d0501318e</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-14 12:40:20</sys_updated_on>
+            <sys_updated_on>2024-10-21 11:11:33</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -130,13 +130,27 @@
             <element>source</element>
             <position>9</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-14 12:40:20</sys_created_on>
-            <sys_id>38eac834c39112104098de1d0501312e</sys_id>
+            <sys_created_on>2024-10-21 11:11:33</sys_created_on>
+            <sys_id>20b933fac3d1da104098de1d050131f6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_egnyte_prote_egnyte_issues_mapping" sys_domain="global" view="Default view">1dd904f0c39112104098de1d0501318e</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-14 12:40:20</sys_updated_on>
+            <sys_updated_on>2024-10-21 11:11:33</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>issue_type</element>
+            <position>10</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-10-21 11:11:33</sys_created_on>
+            <sys_id>a4b933fac3d1da104098de1d050131f6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_egnyte_prote_egnyte_issues_mapping" sys_domain="global" view="Default view">1dd904f0c39112104098de1d0501318e</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-10-21 11:11:33</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

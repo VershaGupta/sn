@@ -4,13 +4,13 @@
             <element>name</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-16 10:26:17</sys_created_on>
-            <sys_id>a86f7955c3d1d2104098de1d050131ca</sys_id>
+            <sys_created_on>2024-10-21 11:19:56</sys_created_on>
+            <sys_id>279bbb7ec3d1da104098de1d05013143</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_egnyte_prote_egnyte_configuration" sys_domain="global" view="Default view">2f18c4fcc35112104098de1d050131ff</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-16 10:26:17</sys_updated_on>
+            <sys_updated_on>2024-10-21 11:19:56</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>endpoint</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-16 10:26:17</sys_created_on>
-            <sys_id>206f7955c3d1d2104098de1d050131cb</sys_id>
+            <sys_created_on>2024-10-21 11:19:56</sys_created_on>
+            <sys_id>679bbb7ec3d1da104098de1d05013150</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_egnyte_prote_egnyte_configuration" sys_domain="global" view="Default view">2f18c4fcc35112104098de1d050131ff</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-16 10:26:17</sys_updated_on>
+            <sys_updated_on>2024-10-21 11:19:56</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,83 +32,97 @@
             <element>issues_table</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-16 10:26:17</sys_created_on>
-            <sys_id>a46f7955c3d1d2104098de1d050131cb</sys_id>
+            <sys_created_on>2024-10-21 11:19:56</sys_created_on>
+            <sys_id>eb9bbb7ec3d1da104098de1d05013150</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_egnyte_prote_egnyte_configuration" sys_domain="global" view="Default view">2f18c4fcc35112104098de1d050131ff</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-16 10:26:17</sys_updated_on>
+            <sys_updated_on>2024-10-21 11:19:56</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>issue_type</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-10-21 11:19:56</sys_created_on>
+            <sys_id>639bbb7ec3d1da104098de1d05013151</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_egnyte_prote_egnyte_configuration" sys_domain="global" view="Default view">2f18c4fcc35112104098de1d050131ff</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-10-21 11:19:56</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>run_type</element>
-            <position>3</position>
+            <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-16 10:26:17</sys_created_on>
-            <sys_id>2c6f7955c3d1d2104098de1d050131cb</sys_id>
+            <sys_created_on>2024-10-21 11:19:56</sys_created_on>
+            <sys_id>e79bbb7ec3d1da104098de1d05013151</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_egnyte_prote_egnyte_configuration" sys_domain="global" view="Default view">2f18c4fcc35112104098de1d050131ff</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-16 10:26:17</sys_updated_on>
+            <sys_updated_on>2024-10-21 11:19:56</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>run_dayofmonth</element>
-            <position>4</position>
+            <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-16 10:26:17</sys_created_on>
-            <sys_id>b06f7955c3d1d2104098de1d050131cc</sys_id>
+            <sys_created_on>2024-10-21 11:19:56</sys_created_on>
+            <sys_id>6f9bbb7ec3d1da104098de1d05013151</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_egnyte_prote_egnyte_configuration" sys_domain="global" view="Default view">2f18c4fcc35112104098de1d050131ff</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-16 10:26:17</sys_updated_on>
+            <sys_updated_on>2024-10-21 11:19:56</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>run_time</element>
-            <position>5</position>
+            <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-16 10:26:17</sys_created_on>
-            <sys_id>386f7955c3d1d2104098de1d050131cc</sys_id>
+            <sys_created_on>2024-10-21 11:19:56</sys_created_on>
+            <sys_id>e39bbb7ec3d1da104098de1d05013152</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_egnyte_prote_egnyte_configuration" sys_domain="global" view="Default view">2f18c4fcc35112104098de1d050131ff</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-16 10:26:17</sys_updated_on>
+            <sys_updated_on>2024-10-21 11:19:56</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>run_period</element>
-            <position>6</position>
+            <position>7</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-16 10:26:17</sys_created_on>
-            <sys_id>bc6f7955c3d1d2104098de1d050131cc</sys_id>
+            <sys_created_on>2024-10-21 11:19:56</sys_created_on>
+            <sys_id>6b9bbb7ec3d1da104098de1d05013152</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_egnyte_prote_egnyte_configuration" sys_domain="global" view="Default view">2f18c4fcc35112104098de1d050131ff</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-16 10:26:17</sys_updated_on>
+            <sys_updated_on>2024-10-21 11:19:56</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>run_start</element>
-            <position>7</position>
+            <position>8</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-16 10:26:17</sys_created_on>
-            <sys_id>346f7955c3d1d2104098de1d050131cd</sys_id>
+            <sys_created_on>2024-10-21 11:19:56</sys_created_on>
+            <sys_id>ef9bbb7ec3d1da104098de1d05013152</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_egnyte_prote_egnyte_configuration" sys_domain="global" view="Default view">2f18c4fcc35112104098de1d050131ff</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-16 10:26:17</sys_updated_on>
+            <sys_updated_on>2024-10-21 11:19:56</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

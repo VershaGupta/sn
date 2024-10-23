@@ -2,6 +2,20 @@
     <element db_object_id="c2d7c4fcc35112104098de1d0501310c" extends="sysauto_script" label="Egnyte Configuration" max_length="40" name="x_snc_egnyte_prote_egnyte_configuration" type="collection">
         <element default="0" label="Modified After" max_length="40" name="modified_after" type="string"/>
         <element label="oauth2_profile" max_length="40" name="oauth2_profile" type="string"/>
+        <element choice="1" label="Issue Type" max_length="4000" name="issue_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="COMPROMISED_ACCOUNT" sequence="0" value="COMPROMISED_ACCOUNT"/>
+                <element inactive_on_update="false" label="MALWARE_INFECTION" sequence="5" value="MALWARE_INFECTION"/>
+                <element inactive_on_update="false" label="UNUSUAL_ACCESS" sequence="9" value="UNUSUAL_ACCESS"/>
+                <element inactive_on_update="false" label="MALFORMED_PERMISSIONS" sequence="4" value="MALFORMED_PERMISSIONS"/>
+                <element inactive_on_update="false" label="UNUSED_GROUP" sequence="8" value="UNUSED_GROUP"/>
+                <element inactive_on_update="false" label="INDIVIDUAL_PERMISSION" sequence="3" value="INDIVIDUAL_PERMISSION"/>
+                <element inactive_on_update="false" label="PUBLIC_LINK" sequence="7" value="PUBLIC_LINK"/>
+                <element inactive_on_update="false" label="OPEN_ACCESS" sequence="6" value="OPEN_ACCESS"/>
+                <element inactive_on_update="false" label="EMPTY_GROUP" sequence="1" value="EMPTY_GROUP"/>
+                <element inactive_on_update="false" label="EXTERNAL_SHARING" sequence="2" value="EXTERNAL_SHARING"/>
+            </choice>
+        </element>
         <element choice="3" default="Egnyte Protect US Endpoint" label="Endpoint" max_length="40" name="endpoint" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Egnyte Protect US Endpoint" sequence="0" value="Egnyte Protect US Endpoint"/>
@@ -14,5 +28,6 @@
                 <element inactive_on_update="false" label="Incident" sequence="0" value="incident"/>
             </choice>
         </element>
+        <element label="Token Expired" max_length="40" name="token_expired" type="boolean"/>
     </element>
 </database>

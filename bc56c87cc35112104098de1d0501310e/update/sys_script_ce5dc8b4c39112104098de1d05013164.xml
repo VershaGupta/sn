@@ -33,6 +33,7 @@
 	var severity = utils.getMappedImpact(current.severity);
 	var urgency = utils.getMappedUrgency(current.severity);
 	var incidentTable = utils.getIncidentTableToUse();
+	var issueType = utils.getIssueTypeConfig();
 	
 	try {
 		// If issue exist and the status is other than open, add work note
@@ -55,9 +56,19 @@
 				incidentFieldValues.business_criticality = severity;
 				incidentFieldValues.contact_type = current.source;
 			}
+			// Check if Issue type set in configuration 
+			//If yes, then create incident based on issue type
+            if (issueType) {
+                if (issueType == current.issue_type) {
+                    incidentID = utils.createIncident(incidentFieldValues, incidentTable, current.status, current.updated);
+                    current.setValue('incident_id', incidentID);
+                }
 
+            }
+			else {
 			incidentID = utils.createIncident(incidentFieldValues, incidentTable, current.status, current.updated);
 			current.setValue('incident_id', incidentID);
+			}
 		}
 	} catch (e) {
 		EgnyteLogger.debug('Exception occurred while creating or updating incident for issue id "' + current.issue_id + '" on table "' + incidentTable + '".');
@@ -70,7 +81,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ce5dc8b4c39112104098de1d05013164</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Egnyte Create Incidents</sys_name>
         <sys_overrides/>
         <sys_package display_value="Egnyte Protect " source="x_snc_egnyte_prote">bc56c87cc35112104098de1d0501310e</sys_package>
@@ -78,7 +89,7 @@
         <sys_scope display_value="Egnyte Protect ">bc56c87cc35112104098de1d0501310e</sys_scope>
         <sys_update_name>sys_script_ce5dc8b4c39112104098de1d05013164</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-10-14 12:53:18</sys_updated_on>
+        <sys_updated_on>2024-10-21 11:13:05</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

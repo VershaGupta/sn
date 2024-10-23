@@ -3,47 +3,62 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>name</element>
-            <list_id display_value="x_snc_egnyte_prote_egnyte_configuration" element="NULL" name="x_snc_egnyte_prote_egnyte_configuration" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">15db04b4c39112104098de1d0501312b</list_id>
+            <list_id display_value="x_snc_egnyte_prote_egnyte_configuration" element="NULL" name="x_snc_egnyte_prote_egnyte_configuration" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">126db332c315da104098de1d05013158</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-14 12:44:28</sys_created_on>
-            <sys_id>51db04b4c39112104098de1d0501312c</sys_id>
+            <sys_created_on>2024-10-21 11:27:47</sys_created_on>
+            <sys_id>9a6df732c315da104098de1d050131ca</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-14 12:44:28</sys_updated_on>
+            <sys_updated_on>2024-10-21 11:27:47</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>endpoint</element>
-            <list_id display_value="x_snc_egnyte_prote_egnyte_configuration" element="NULL" name="x_snc_egnyte_prote_egnyte_configuration" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">15db04b4c39112104098de1d0501312b</list_id>
+            <list_id display_value="x_snc_egnyte_prote_egnyte_configuration" element="NULL" name="x_snc_egnyte_prote_egnyte_configuration" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">126db332c315da104098de1d05013158</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-14 12:44:28</sys_created_on>
-            <sys_id>d1db04b4c39112104098de1d0501312c</sys_id>
+            <sys_created_on>2024-10-21 11:27:47</sys_created_on>
+            <sys_id>126df732c315da104098de1d050131cb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-14 12:44:28</sys_updated_on>
+            <sys_updated_on>2024-10-21 11:27:47</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>issues_table</element>
-            <list_id display_value="x_snc_egnyte_prote_egnyte_configuration" element="NULL" name="x_snc_egnyte_prote_egnyte_configuration" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">15db04b4c39112104098de1d0501312b</list_id>
+            <list_id display_value="x_snc_egnyte_prote_egnyte_configuration" element="NULL" name="x_snc_egnyte_prote_egnyte_configuration" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">126db332c315da104098de1d05013158</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-14 12:44:28</sys_created_on>
-            <sys_id>55db04b4c39112104098de1d0501312c</sys_id>
+            <sys_created_on>2024-10-21 11:27:47</sys_created_on>
+            <sys_id>926df732c315da104098de1d050131cb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-14 12:44:28</sys_updated_on>
+            <sys_updated_on>2024-10-21 11:27:47</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>issue_type</element>
+            <list_id display_value="x_snc_egnyte_prote_egnyte_configuration" element="NULL" name="x_snc_egnyte_prote_egnyte_configuration" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">126db332c315da104098de1d05013158</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-10-21 11:27:47</sys_created_on>
+            <sys_id>166df732c315da104098de1d050131cb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-10-21 11:27:47</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -57,10 +72,10 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-14 12:44:28</sys_created_on>
+            <sys_created_on>2024-10-21 11:27:47</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>15db04b4c39112104098de1d0501312b</sys_id>
+            <sys_id>126db332c315da104098de1d05013158</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_snc_egnyte_prote_egnyte_configuration</sys_name>
             <sys_package display_value="Egnyte Protect " source="x_snc_egnyte_prote">bc56c87cc35112104098de1d0501310e</sys_package>
@@ -68,7 +83,7 @@
             <sys_scope display_value="Egnyte Protect ">bc56c87cc35112104098de1d0501310e</sys_scope>
             <sys_update_name>sys_ui_list_x_snc_egnyte_prote_egnyte_configuration_null</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-14 12:44:28</sys_updated_on>
+            <sys_updated_on>2024-10-21 11:27:47</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>
