@@ -6,8 +6,8 @@
         <auth_code_lifespan>0</auth_code_lifespan>
         <auth_url>https://usc1-api.egnyteprotect.com/oauth2/code</auth_url>
         <certificate_url/>
-        <client_id>5zspndak8q53knupnu4ugpy5</client_id>
-        <client_secret>﷞﷟﷒fd039cfcc39112104098de1d050131e1﷬﷔1﷬﷭fwpV9cVnMJy5ae3agMAVdQ==_vcOSPqvCPwiU98H7YGEqTXF6o3e0jNGYpQNwYzbCzP6AGcGoO9DAxYEinNSgl0BogdWJ-AM9sPamW-5x-Dr5g==﷮﷯</client_secret>
+        <client_id>{egnyte-application-client-id-here}</client_id>
+        <client_secret>﷞﷟﷒fd039cfcc39112104098de1d050131e1﷬﷔1﷬﷭zCQLZFqSlGwX0-Fgl5m35g==rTOlMdrPqx6s31sWjr_CCkw_g8UndbThfJ01mxS4gR04vT0sTGOzZYJKH-Fa0x15J6P5OoQMNQ==﷮﷯</client_secret>
         <client_type/>
         <client_uuid>cc2e3dd1c3d1d2104098de1d05013185</client_uuid>
         <code_challenge_method>S256</code_challenge_method>
@@ -35,14 +35,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-10-16 10:21:44</sys_created_on>
         <sys_id>002e3dd1c3d1d2104098de1d05013186</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Egnyte Protect US</sys_name>
         <sys_package display_value="Egnyte Protect " source="x_snc_egnyte_prote">bc56c87cc35112104098de1d0501310e</sys_package>
         <sys_policy/>
         <sys_scope display_value="Egnyte Protect ">bc56c87cc35112104098de1d0501310e</sys_scope>
         <sys_update_name>oauth_entity_002e3dd1c3d1d2104098de1d05013186</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-10-16 10:26:42</sys_updated_on>
+        <sys_updated_on>2024-11-04 13:02:23</sys_updated_on>
         <token_url>https://usc1-api.egnyteprotect.com/oauth2/token</token_url>
         <type>oauth_provider</type>
         <use_mutual_auth>false</use_mutual_auth>

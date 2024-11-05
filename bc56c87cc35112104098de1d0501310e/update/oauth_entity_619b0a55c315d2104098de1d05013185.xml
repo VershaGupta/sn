@@ -6,8 +6,8 @@
         <auth_code_lifespan>0</auth_code_lifespan>
         <auth_url>https://euw1-api.egnyteprotect.com/oauth2/code</auth_url>
         <certificate_url/>
-        <client_id>5zspndak8q53knupnu4ugpy5</client_id>
-        <client_secret>﷞﷟﷒fd039cfcc39112104098de1d050131e1﷬﷔1﷬﷭fxsPRtrQIKP2WwNC6f6OrA==xPftbvJJLR3xCVem5Ei0aCrZbHnrq7WJOmLWf6y_u-7NVUGO2YnP0yPbFGBbb7xnQVEKUIgQ6YLz_GdcaMkZ0g==﷮﷯</client_secret>
+        <client_id>{egnyte-application-client-id-here}</client_id>
+        <client_secret>﷞﷟﷒fd039cfcc39112104098de1d050131e1﷬﷔1﷬﷭pV4Y1ViXYkxsyHHbGmUsLQ==neYiAFwYANRw0_-93CAi0xDnq1oOAUYS-KDAXsH1gm5-FjnQ2fuRs-bOsAyh1RczL46mlQh3Zw==﷮﷯</client_secret>
         <client_type/>
         <client_uuid>219b0a55c315d2104098de1d05013185</client_uuid>
         <code_challenge_method>S256</code_challenge_method>
@@ -35,14 +35,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-10-16 11:23:54</sys_created_on>
         <sys_id>619b0a55c315d2104098de1d05013185</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Egnyte Protect EU</sys_name>
         <sys_package display_value="Egnyte Protect " source="x_snc_egnyte_prote">bc56c87cc35112104098de1d0501310e</sys_package>
         <sys_policy/>
         <sys_scope display_value="Egnyte Protect ">bc56c87cc35112104098de1d0501310e</sys_scope>
         <sys_update_name>oauth_entity_619b0a55c315d2104098de1d05013185</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-10-16 11:24:27</sys_updated_on>
+        <sys_updated_on>2024-11-04 13:04:33</sys_updated_on>
         <token_url>https://euw1-api.egnyteprotect.com/oauth2/token</token_url>
         <type>oauth_provider</type>
         <use_mutual_auth>false</use_mutual_auth>
